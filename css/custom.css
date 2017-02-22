@@ -1,0 +1,36 @@
+/* Custom Styles for Trimsters, Inc. */
+
+body {
+	padding: 20px;
+	font: normal normal 14px/140% 'Droid Sans', sans-serif;
+}
+
+a {
+	color: #81c7eb;
+}
+
+a:hover {
+	color: #783cfe;
+	text-decoration: none;
+}
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+img.main-logo {
+	width: 220px;
+	margin: 30px auto 50px;
+	text-align: center;
+	display: block;
+}
+
+.main-footer {
+	padding: 50px 0px 20px;
+}
+
+a h2 {
+	font: bold italic 24px/150% 'Droid Serif', serif;
+}
+
