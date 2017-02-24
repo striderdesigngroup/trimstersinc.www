@@ -1,8 +1,9 @@
 /* Custom Styles for Trimsters, Inc. */
 
 body {
-	padding: 20px;
+	padding: 20px 0px;
 	font: normal normal 14px/140% 'Droid Sans', sans-serif;
+	color: #222;
 }
 
 a {
@@ -17,6 +18,7 @@ a:hover {
 #container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0px 20px;
 }
 
 img.main-logo {
@@ -33,4 +35,22 @@ img.main-logo {
 a h2 {
 	font: bold italic 24px/150% 'Droid Serif', serif;
 }
+
+.jumbotron-footer {
+	width: 100%;
+	padding: 20px;
+	background-color: #f1f1f1;
+	text-align: center;
+	margin: 20px 0px -20px;
+}
+
+	.jumbotron-footer a {
+		color: #222;
+	}
+
+	.jumbotron-footer a:hover {
+		color: #81c7eb;
+	}
+
+
 
