@@ -160,3 +160,9 @@ a h2 {
 }
 
 
+@media screen and (max-width: 767px) {
+	.small-hidden {
+		visibility: hidden;
+	}
+}
+
