@@ -121,7 +121,7 @@ img.logo {
 }
 
 a h2 {
-	font: bold normal 24px/150% 'Droid Serif', serif;
+	font: normal normal 22px/150% 'Droid Sans', sans-serif;
 }
 
 .jumbotron-footer {
@@ -166,3 +166,12 @@ a h2 {
 	}
 }
 
+.btn-submit {
+	background-color: #783cfe;
+	color: white;
+}
+
+	.btn-submit:hover {
+		background-color: #6725fb;
+		color: white;
+	}

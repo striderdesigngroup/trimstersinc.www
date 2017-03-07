@@ -50,11 +50,28 @@
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Plans</a></li>
+                  <li><a href="building-index.html" class="active">Home</a></li>
+                  <li><a href="building/about.html">About Us</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Plans <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="building/plans/plans-index.html">All Plans</a></li>
+                      <li><a href="building/plans/hewey.html">Hewey</a></li>
+                      <li><a href="building/plans/dewey.html">Dewey</a></li>
+                      <li><a href="building/plans/lewey.html">Lewey</a></li>
+                      <li><a href="building/plans/tyson.html">Tyson</a></li>
+                      <li><a href="building/plans/hughes.html">Hughes</a></li>
+                      <li><a href="building/plans/rico.html">Rico</a></li>
+                      <li><a href="building/plans/pickering.html">Pickering</a></li>
+                      <li><a href="building/plans/bunn.html">Bunn</a></li>
+                      <li><a href="building/plans/wallace.html">Wallace</a></li>
+                      <li><a href="building/plans/stathos.html">Stathos</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Available Homes</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="building/contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -64,15 +81,13 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <a href="">
-            <img src="image/placeholder.jpg" class="img-responsive margin-bottom-30" border="0" />
-          </a>
+          <img src="image/placeholder.jpg" class="img-responsive margin-bottom-30" border="0" />
         </div>
         <div class="col-sm-4">
-          <a href="">
+          <a href="building/plans/plans-index.html">
             <img src="image/placeholder.jpg" class="img-responsive margin-bottom-30" border="0" />
           </a>
-          <a href="">
+          <a href="building/available-homes/available-homes-index.html">
             <img src="image/placeholder.jpg" class="img-responsive margin-bottom-30" border="0" />
           </a>
         </div>
@@ -84,9 +99,9 @@
       <div class="row">
         <div class="col-sm-3">
           <ul>
-            <li><a href=""><strong>Home</strong></a></li>
-            <li><a href=""><strong>About Us</strong></a></li>
-            <li><a href="trim/index.html"><strong>Trimsters, Inc.</strong></a></li>
+            <li><a href="building-index.html"><strong>Home</strong></a></li>
+            <li><a href="building/about.html"><strong>About Us</strong></a></li>
+            <li><a href="trim-index.html"><strong>Trimsters, Inc.</strong></a></li>
             <br />
             <li>&copy; <script>document.write(new Date().getFullYear())</script> Trimsters, Inc. <br />All Rights Reserved.</li>
             <br />
@@ -96,12 +111,12 @@
 
         <div class="col-sm-3">
           <ul>
-            <li><a href=""><strong>Plans</strong></a></li>
-            <li><a href="">Hewey</a></li>
-            <li><a href="">Dewey</a></li>
-            <li><a href="">Lewey</a></li>
-            <li><a href="">Tyson</a></li>
-            <li><a href="">Hughes</a></li>
+            <li><a href="building/plans/plans-index.html"><strong>Plans</strong></a></li>
+            <li><a href="building/plans/hewey.html">Hewey</a></li>
+            <li><a href="building/plans/dewey.html">Dewey</a></li>
+            <li><a href="building/plans/lewey.html">Lewey</a></li>
+            <li><a href="building/plans/tyson.html">Tyson</a></li>
+            <li><a href="building/plans/hughes.html">Hughes</a></li>
             <br />
             <li><a href=""><strong>Available Homes</strong></a></li>
             <li><a href="">Home 1</a></li>
@@ -112,11 +127,11 @@
         <div class="col-sm-3">
           <ul>
             <br />
-            <li><a href="">Rico</a></li>
-            <li><a href="">Pickering</a></li>
-            <li><a href="">Bunn</a></li>
-            <li><a href="">Wallace</a></li>
-            <li><a href="">Stathos</a></li>
+            <li><a href="building/plans/rico.html">Rico</a></li>
+            <li><a href="building/plans/pickering.html">Pickering</a></li>
+            <li><a href="building/plans/bunn.html">Bunn</a></li>
+            <li><a href="building/plans/wallace.html">Wallace</a></li>
+            <li><a href="building/plans/stathos.html">Stathos</a></li>
             <br />
             <br />
             <li><a href="">Home 3</a></li>
@@ -126,10 +141,10 @@
 
         <div class="col-sm-3">
           <ul>
-            <li><a href=""><strong>Contact Us</strong></a></li>
+            <li><a href="building/contact.html"><strong>Contact Us</strong></a></li>
             <li>150 W Road<br />Angier, NC 27501</a></li>
-            <li><strong>Phone:</strong> <a href="">(919) 331-2436</a></li>
-            <li><strong>Email:</strong> <a href="">info@trimstersinc.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:1-919-331-2436">(919) 331-2436</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@trimstersinc.com">info@trimstersinc.com</a></li>
             <br />
             <br />
             <br />
@@ -142,6 +157,7 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Google Custom Search Engine -->
