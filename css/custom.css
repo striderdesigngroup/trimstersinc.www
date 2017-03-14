@@ -175,3 +175,27 @@ a h2 {
 		background-color: #6725fb;
 		color: white;
 	}
+
+p.caption {
+	margin: -20px 0px 20px;
+	font-size: 16px;
+	text-align: right;
+}
+
+img.center {
+	display: block;
+	margin: 0px auto;
+}
+
+p.caption-center {
+	clear: both;
+	margin: 15px 0px 20px;
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+
+
+
