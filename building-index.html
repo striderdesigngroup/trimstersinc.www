@@ -14,8 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <link href="//fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -70,7 +69,16 @@
                       <li><a href="building/plans/stathos.html">Stathos</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Available Homes</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Available Homes <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="available-homes/available-homes-index.html">All Available Homes</a></li>
+                      <li><a href="available-homes/hl-24.html">Homestead Lot #24</a></li>
+                      <li><a href="available-homes/pg-2.html">Pecan Grove Lot #2</a></li>
+                    </ul>
+                  </li>
                   <li><a href="building/contact.html">Contact Us</a></li>
                 </ul>
               </div>
@@ -81,7 +89,7 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <img src="image/placeholder.jpg" class="img-responsive margin-bottom-30" border="0" />
+          <img src="building/image/building-home-main.jpg" class="img-responsive margin-bottom-30" border="0" />
         </div>
         <div class="col-sm-4">
           <a href="building/plans/plans-index.html">
@@ -95,49 +103,56 @@
     </div>
 
 
-     <div class="jumbotron-footer">
+    <div class="jumbotron-footer">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <ul>
             <li><a href="building-index.html"><strong>Home</strong></a></li>
             <li><a href="building/about.html"><strong>About Us</strong></a></li>
-            <li><a href="trim-index.html"><strong>Trimsters, Inc.</strong></a></li>
             <br />
-            <li>&copy; <script>document.write(new Date().getFullYear())</script> Trimsters, Inc. <br />All Rights Reserved.</li>
-            <br />
-            <li>Site Produced by <br /><a href="http://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</li>
+            <li><a href="trim-index.html"><strong>Interior Trim <br />Carpentry Division</strong></a></li>
           </ul>   
         </div>
 
-        <div class="col-sm-3">
-          <ul>
-            <li><a href="building/plans/plans-index.html"><strong>Plans</strong></a></li>
-            <li><a href="building/plans/hewey.html">Hewey</a></li>
-            <li><a href="building/plans/dewey.html">Dewey</a></li>
-            <li><a href="building/plans/lewey.html">Lewey</a></li>
-            <li><a href="building/plans/tyson.html">Tyson</a></li>
-            <li><a href="building/plans/hughes.html">Hughes</a></li>
-            <br />
-            <li><a href=""><strong>Available Homes</strong></a></li>
-            <li><a href="">Home 1</a></li>
-            <li><a href="">Home 2</a></li>
-          </ul>
+        <div class="col-sm-5">
+          <div class="row">
+            <div class="col-sm-4">
+              <ul>
+                <li><a href="building/plans/plans-index.html"><strong>Plans</strong></a></li>
+                <li><a href="building/plans/hewey.html">Hewey</a></li>
+                <li><a href="building/plans/dewey.html">Dewey</a></li>
+                <li><a href="building/plans/lewey.html">Lewey</a></li>
+                <li><a href="building/plans/tyson.html">Tyson</a></li> 
+              </ul>
+            </div>
+
+            <div class="col-sm-4">
+              <ul>
+                <br />
+                <li><a href="building/plans/hughes.html">Hughes</a></li>
+                <li><a href="building/plans/pickering.html">Pickering</a></li>
+                <li><a href="building/plans/rico.html">Rico</a></li>
+                <li><a href="building/plans/bunn.html">Bunn</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4">
+              <ul>
+                <br />
+                <li><a href="building/plans/wallace.html">Wallace</a></li>
+                <li><a href="building/plans/stathos.html">Stathos</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <ul>
-            <br />
-            <li><a href="building/plans/rico.html">Rico</a></li>
-            <li><a href="building/plans/pickering.html">Pickering</a></li>
-            <li><a href="building/plans/bunn.html">Bunn</a></li>
-            <li><a href="building/plans/wallace.html">Wallace</a></li>
-            <li><a href="building/plans/stathos.html">Stathos</a></li>
-            <br />
-            <br />
-            <li><a href="">Home 3</a></li>
-            <li><a href="">Home 4</a></li>
+            <li><a href="building/available-homes/available-homes-index.html"><strong>Available Homes</strong></a></li>
+            <li><a href="building/available-homes/hl-24.html">Homestead Lot #24</a></li>
+            <li><a href="building/available-homes/pg-2.html">Pecan Grove Lot #2</a></li>
           </ul>
-        </div>
+        </div>   
 
         <div class="col-sm-3">
           <ul>
@@ -145,13 +160,18 @@
             <li>150 W Road<br />Angier, NC 27501</a></li>
             <li><strong>Phone:</strong> <a href="tel:1-919-331-2436">(919) 331-2436</a></li>
             <li><strong>Email:</strong> <a href="mailto:trimsterinc@yahoo.com">trimsterinc@yahoo.com</a></li>
-            <br />
-            <br />
-            <br />
-            <li><a href="">Home 5</a></li>
-            <li><a href="">Home 6</a></li>
           </ul>
-        </div>    
+        </div>   
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li>&copy; <script>document.write(new Date().getFullYear())</script> Trimsters, Inc. All Rights Reserved. Site Produced by <a href="http://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</li>
+          </ul>
+        </div>
       </div>
     </div>
 
