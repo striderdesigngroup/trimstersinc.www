@@ -13,6 +13,7 @@
     <!-- Bootstrap -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/custom.css" rel="stylesheet">
+    <link href="../../css/lightbox.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="../../favicon.ico" />
@@ -74,9 +75,8 @@
                       Available Homes <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a href="available-homes-index.html"><strong>Available Homes</strong></a></li>
-                      <li><a href="hl-24.html">Homestead Lot #24</a></li>
-                      <li><a href="pg-2.html">Pecan Grove Lot #2</a></li>
+                      <li><a href="available-homes-index.html">Available Homes</a></li>
+                      <li><a href="pg-2.html" class="active">Pecan Grove Lot #2</a></li>
                     </ul>
                   </li>
                   <li><a href="../contact.html">Contact Us</a></li>
@@ -89,11 +89,33 @@
 
 
       <div class="row">
-        <div class="col-sx-12">
-          <h1 class="text-center" style="margin:80px 0px 330px;">Information Coming Soon</h1>
+        <div class="col-sm-12" style="margin-top:-20px;">
+          <h3>Pecan Grove Lot #2</h3>
         </div>
       </div>
 
+      <br />
+
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="image/pg2-2.jpg" data-lightbox="pg-2">
+            <img src="image/pg2-2.jpg" class="img-responsive margin-bottom-30" border="0" />
+          </a>
+          <a href="image/pg2-3.jpg" data-lightbox="pg-2">
+            <img src="image/pg2-3.jpg" class="img-responsive margin-bottom-30" border="0" />
+          </a> 
+        </div> 
+
+        <div class="col-sm-6">
+          <a href="image/pg2-1.jpg" data-lightbox="pg-2">
+            <img src="image/pg2-1.jpg" class="img-responsive margin-bottom-30" border="0" />
+          </a>
+          <a href="image/Pecan-Grove-Lot2.pdf" target="_blank">
+            <img src="../../image/icon-pdf.png" class="pull-left" border="0" />
+            <h4 class="pull-left margin-left-15">Download a PDF of this plan</h4>
+          </a> 
+        </div> 
+      </div>
     </div>
     <!-- end of container -->
 
@@ -143,7 +165,6 @@
         <div class="col-sm-2">
           <ul>
             <li><a href="available-homes-index.html"><strong>Available Homes</strong></a></li>
-            <li><a href="hl-24.html">Homestead Lot #24</a></li>
             <li><a href="pg-2.html">Pecan Grove Lot #2</a></li>
           </ul>
         </div>   
@@ -174,6 +195,7 @@
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/lightbox.js"></script>
     <!-- Google Custom Search Engine -->
     <script>
       (function() {
