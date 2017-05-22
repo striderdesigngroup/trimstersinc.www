@@ -179,7 +179,7 @@ class Config {
                 "size": "small",
                 "addon": {
                     "rightIcon": "",
-                    "leftIcon": "fa fa-suitcase"
+                    "leftIcon": "glyphicon glyphicon-briefcase"
                 }
             },
             "id": "f5",
