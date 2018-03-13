@@ -13,7 +13,6 @@
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
-    <link href="vendor.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" > 
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
@@ -93,95 +92,83 @@
           <p><strong>Kim:</strong> <a href="tel:1-919-639-2795">(919) 639-2795</a></p>
           <p><strong>Amanda:</strong> <a href="tel:1-919-639-2722">(919) 639-2722</a></p>
           <p><strong>Email:</strong> <a href="mailto:trimsterinc@yahoo.com">trimsterinc@yahoo.com</a></p>
-        </div>
-        <div class="col-sm-6">
+
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.8891797467627!2d-78.74240498474595!3d35.50701838023523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8684cc77d331%3A0x89a3333a5959cc30!2s45+W+Depot+St%2C+Angier%2C+NC+27501!5e0!3m2!1sen!2sus!4v1517184843506" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        <div class="col-sm-6">
+          <form id="contact-form" method="post" action="contact.php" role="form">
 
-        <!--<div class="col-sm-6">
-          <div class="form-container jf-form">
-            <form data-licenseKey="JF-06979694W0893114D" name="jqueryform-f48c7b" id="jqueryform-f48c7b" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on"> 
-              <input type="hidden" name="method" value="validateForm">
-              <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+              <div class="messages"></div>
 
-              <div class="form-group f1 required" data-fid="f1">
-                <label class="control-label" for="f1">Name:</label>
+              <div class="controls">
 
-                <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
-                  <input type="text" class="form-control" id="f1" name="f1" value="" data-rule-required="true"  />
-                </div>    
-              </div>
-
-              <div class="form-group f2 required" data-fid="f2">
-                <label class="control-label" for="f2">Email:</label>
-
-                <div class="input-group">
-                  <span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
-                  <input type="email" class="form-control" id="f2" name="f2" value=""   
-                    data-rule-email="true" 
-                    data-rule-required="true"  />
-                </div>
-              </div>
-
-              <div class="form-group f4 " data-fid="f4">
-                <label class="control-label" for="f4">Phone:</label>
-
-                <div class="input-group">
-                  <span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
-                  <input type="tel" class="form-control" id="f4" name="f4" value=""   placeholder="xxx-xxx-xxxx" 
-                  data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"    />
-                </div>
-              </div>
-
-              <div class="form-group f5 " data-fid="f5">
-                <label class="control-label" for="f5">Company:</label>
-
-                <div class="input-group">
-                  <span class="input-group-addon left"><i class="glyphicon glyphicon-briefcase"></i> </span>
-                  <input type="text" class="form-control" id="f5" name="f5" value=""     />
-                </div>
-              </div>
-
-              <div class="form-group f3 required" data-fid="f3">
-                <label class="control-label" for="f3">Comments:</label>
-
-                <div class="input-group">
-                  <span class="input-group-addon left"><i class="glyphicon glyphicon-edit"></i> </span>
-                  <textarea class="form-control" id="f3" name="f3" rows="3"   
-                  data-rule-required="true" ></textarea>
-                </div>  
-              </div>
-
-              <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
-                <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
-
-                <div class="progress" style="display: none; z-index: -1; position: absolute;">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+                <div class="row">
+                      <div class="col-md-12">
+                        <h3>Contact Request Form</h3>
+                          <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                      </div>
                   </div>
-                </div>
 
-                <button type="submit" class="btn btn-submit btn-sm" style="z-index: 1;">Submit</button>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_name">* Name</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_company">Company</label>
+                              <input id="form_company" type="text" name="company" class="form-control" placeholder="" />
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">* Email</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_phone">Phone</label>
+                              <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_message">* Message</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <div class="g-recaptcha" data-sitekey="6Lef7ksUAAAAACEjkyqIc5teY-P9eenM2XPUevYG" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                              <input class="form-control hidden" data-recaptcha="true" required data-error="Please complete the Captcha">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <input type="submit" class="btn btn-submit btn-send" value="SUBMIT">
+                      </div>
+                  </div>
+                  
               </div>
 
-              <div class="clearfix"></div>
-
-              <div class="submit">
-                <p class="error bg-warning" style="display:none;">Please check the required fields. </p>
-              </div>
-
-              <div class="clearfix"></div>
-            </form>
-
+          </form>
         </div>
-
-        <div class="container jf-thankyou" style="display:none;" data-redirect="" data-seconds="10">
-          <h3>Your form has been submitted. Thank You!</h3>
-        </div>
-
-        </div>-->
-      </div>
     </div>
-
+  </div>
 
     <div class="jumbotron-footer">
       <div class="row">
@@ -246,15 +233,12 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
-    <script src="vendor.js"></script>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
 
-    <script src="jqueryform.com.min.js?ver=v1.2&id=jqueryform-f48c7b" ></script>
-
-    <script type="text/javascript">
-      // start jqueryform initialization
-      // --------------------------------
-      JF.init('#jqueryform-f48c7b');
-    </script>
+    
 
     <!-- Google Custom Search Engine -->
     <script>
