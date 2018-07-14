@@ -7,7 +7,7 @@ require('recaptcha-master/src/autoload.php');
 $from = 'Building Division Contact Request <example@domain.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Shawn Ogni <sogni68@aol.com>, Strider Design Group <samanthacstrider@gmail.com>';
+$sendTo = 'Shawn Ogni <sogni68@aol.com>, Mandy Bunn <trimsterinc@yahoo.com>, Strider Design Group <samanthacstrider@gmail.com>';
 
 // subject of the email
 $subject = 'Trimsters, Inc. Building Division Contact Request';
