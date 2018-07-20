@@ -53,24 +53,7 @@
                   <li><a href="../../../../building-index.html">Home</a></li>
                   <li><a href="../../../about.html">About</a></li>
                   <li><a href="../../../energy-efficient.html">Energy Efficient</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Plans <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="../../../plans/plans-index.html">All Plans</a></li>
-                      <li><a href="../../../plans/huey.html">Huey</a></li>
-                      <li><a href="../../../plans/dewey.html">Dewey</a></li>
-                      <li><a href="../../../plans/louie.html">Louie</a></li>
-                      <li><a href="../../../plans/tyson.html">Tyson</a></li>
-                      <li><a href="../../../plans/hughes.html">Hughes</a></li>
-                      <li><a href="../../../plans/rico.html">Rico</a></li>
-                      <li><a href="../../../plans/pickering.html">Pickering</a></li>
-                      
-                      <li><a href="../../../plans/wallace.html">Wallace</a></li>
-                      <li><a href="../../../plans/stathos.html">Stathos</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="../../../plans/plans-index.html">Plans</a></li>
                   <li><a href="../../available-homes-index.html" class="active">Available Lots</a></li>
                   <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -481,6 +464,10 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
       })();
+
+      window.onload = function(){
+        document.getElementById('gsc-i-id1').placeholder = 'Search';
+      };
     </script>
   </body>
 </html>
