@@ -50,25 +50,9 @@
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li><a href="../../building-index.html">Home</a></li>
-                  <li><a href="../about.html">About Us</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Plans <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="plans-index.html">All Plans</a></li>
-                      <li><a href="huey.html">Huey</a></li>
-                      <li><a href="dewey.html">Dewey</a></li>
-                      <li><a href="louie.html">Louie</a></li>
-                      <li><a href="tyson.html">Tyson</a></li>
-                      <li><a href="hughes.html">Hughes</a></li>
-                      <li><a href="rico.html" class="active">Rico</a></li>
-                      <li><a href="pickering.html">Pickering</a></li>
-                      <li><a href="bunn.html">Bunn</a></li>
-                      <li><a href="wallace.html">Wallace</a></li>
-                      <li><a href="stathos.html">Stathos</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="../about.html">About</a></li>
+                  <li><a href="../energy-efficient.html">Energy Efficient</a></li>
+                  <li><a href="plans-index.html" class="active">Plans</a></li>
                   <li><a href="../available-homes/available-homes-index.html">Available Lots</a></li>
                   <!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -80,7 +64,8 @@
                       <li><a href="../available-homes/pg-2.html">Pecan Grove Lot #2</a></li>
                     </ul>
                   </li>-->
-                  <li><a href="../contact.html">Contact Us</a></li>
+                  <li><a href="../gallery.html">Gallery</a></li>
+                  <li><a href="../contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -90,7 +75,12 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <img src="image/rico1.jpg" class="img-responsive margin-bottom-30" border="0" />
+          <h2 class="purple text-center">The Rico</h2>
+          <br />
+        </div>
+
+        <div class="col-sm-6">
+          <img src="image/rico3.jpg" class="img-responsive margin-bottom-30" border="0" />
         </div>
       
         <div class="col-sm-6">
@@ -136,7 +126,7 @@
                 <li><a href="hughes.html">Hughes</a></li>
                 <li><a href="pickering.html">Pickering</a></li>
                 <li><a href="rico.html">Rico</a></li>
-                <li><a href="bunn.html">Bunn</a></li>
+                
               </ul>
             </div>
 
@@ -194,6 +184,10 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
       })();
+
+      window.onload = function(){
+        document.getElementById('gsc-i-id1').placeholder = 'Search';
+      };
     </script>
   </body>
 </html>
